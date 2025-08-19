@@ -1,33 +1,35 @@
-# FastAPI Template
+#FastAPI Sample Project
 
-This sample repo contains the recommended structure for a Python FastAPI project. In this sample, we use `fastapi` to build a web application and the `pytest` to run tests.
+This repository contains a sample FastAPI application demonstrating best practices for Python development, including PEP 8 compliance and type hinting. It provides a minimal but structured foundation for building and testing FastAPI applications.
 
-For a more in-depth tutorial, see our [Fast API tutorial](https://code.visualstudio.com/docs/python/tutorial-fastapi).
+**Features**
+FastAPI backend with auto-generated Swagger UI (/docs)
+Example test cases included (test_main.py)
+PEP 8 compliant and type-annotated Python code
+Configured for development in VS Code Dev Containers
 
-The code in this repo aims to follow Python style guidelines as outlined in [PEP 8](https://peps.python.org/pep-0008/).
+**Prerequisites**
+Docker installed
+Visual Studio Code with the following extensions:
+Dev Containers
+Python
+Python Debugger
+Pylance
 
-## Set up instructions
+**Recommended VS Code Settings**
+Python > Analysis > Type Checking Mode: basic
+Python > Analysis > Inlay Hints > Function Return Types: enable
+Python > Analysis > Inlay Hints > Variable Types: enable
 
-This sample makes use of Dev Containers, in order to leverage this setup, make sure you have [Docker installed](https://www.docker.com/products/docker-desktop).
+**Setup**
+-Open the project folder in VS Code (File > Open Folder…)
+-Reopen the folder in a Dev Container via the Command Palette (View > -Command Palette… > Dev Container: Reopen in Container)
 
-To successfully run this example, we recommend the following VS Code extensions:
+**Running the Application**
+-Start the application using the Run and Debug view or by pressing F5
+-Open the application in a browser by clicking the URL displayed in the terminal (Ctrl + click)
+-Access the Swagger UI at /docs to explore and test API endpoints
 
-- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Python Debugger](https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy)
-- [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) 
-
-In addition to these extension there a few settings that are also useful to enable. You can enable to following settings by opening the Settings editor (`Ctrl+,`) and searching for the following settings:
-
-- Python > Analysis > **Type Checking Mode** : `basic`
-- Python > Analysis > Inlay Hints: **Function Return Types** : `enable`
-- Python > Analysis > Inlay Hints: **Variable Types** : `enable`
-
-## Running the sample
-- Open the template folder in VS Code (**File** > **Open Folder...**)
-- Open the Command Palette in VS Code (**View > Command Palette...**) and run the **Dev Container: Reopen in Container** command.
-- Run the app using the Run and Debug view or by pressing `F5`
-- `Ctrl + click` on the URL that shows up on the terminal to open the running application 
-- Test the API functionality by navigating to `/docs` URL to view the Swagger UI
-- Configure your Python test in the Test Panel or by triggering the **Python: Configure Tests** command from the Command Palette
-- Run tests in the Test Panel or by clicking the Play Button next to the individual tests in the `test_main.py` file
+**Testing**
+-Configure tests using Python: Configure Tests from the Command Palette
+-Run tests via the Test Panel or by clicking the run button next to individual tests in test_main.py
